@@ -14,6 +14,17 @@ It is architected using **modular backend design**, **WebSocket-based communicat
 
 ---
 
+## 🎓 Academic Context
+
+This project was developed as a 2nd Year End Semester Project for MERN Stack Development.
+It was designed and implemented collaboratively by a team of four students:
+
+Takunda Leonard Gorogodo
+Budwell K Nyamhamba
+Lokesh Karri
+
+---
+
 ## 🧠 Key Highlights
 
 * ⚡ Real-time communication using WebSockets
