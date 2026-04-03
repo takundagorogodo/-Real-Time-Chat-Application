@@ -267,6 +267,7 @@ crypto.createHash("sha256");
 ## 👨‍💻 Author
 
 **Takunda Leonard Gorogodo**
+
 Full-Stack Developer | Computer Science Student
 
 ---
@@ -289,7 +290,7 @@ If you found this project useful or impressive:
 ## 📬 Contact
 
 * GitHub Issues (preferred)
-* Email: [takundagorogodo@example.com](mailto:takundagorogodo@example.com)
+* Email: [gorogodotakundah26@gmail.com](mailto:gorogodotakundah26@gmail.com)
 
 ---
 
