@@ -1,0 +1,299 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: rgba(11, 82, 120, 0.958);
+  --tertiary-color: #f7f6f6;
+}
+
+
+body {
+  background: var(--primary-color);
+  background-color: var(--tertiary-color); /* ✅ fixed typo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  height: 450px;
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.container:hover .left-side {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.container:hover .right-side {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.container:hover form p,
+.container:hover span,
+.container:hover form input::placeholder {
+  color: var(--primary-color);
+}
+
+.container:hover form input {
+  border-bottom: 2px solid var(--primary-color);
+  color: #fff;
+}
+
+.container:hover .btn1,
+.container:hover .btn {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.left-side {
+  flex-basis: 50%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 10px 50% 50% 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.7s ease-in-out;
+}
+
+.left-side h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.left-side p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.right-side form {
+  position: absolute;
+  width: 90%;
+  transition: left 0.7s ease-in-out;
+}
+
+.right-side {
+  position: relative;   
+  overflow: hidden;     
+}
+
+.right-side form {
+  position: absolute;
+  width: 90%;         
+  transition: left 0.7s ease-in-out;
+}
+
+.right-side {
+  flex-basis: 50%;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+  background: var(--primary-color);
+  transition: all 0.7s ease-in-out;
+}
+
+
+.button-box {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30%;
+  border-radius: 25px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.btn-toggle {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+  z-index: 100;
+}
+
+.btn-toggle.active {
+  color: var(--primary-color);
+}
+
+.container:hover .active {
+  color: var(--secondary-color) !important;
+}
+
+.btn {
+  position: absolute;
+  top: 7px;
+  left: 2%;
+  width: 115px;
+  height: 35px;
+  border-radius: 20px;
+  background: var(--secondary-color);
+  z-index: 50;
+  transition: left 0.7s ease-in-out;
+}
+
+
+form {
+  padding: 10px 5px;
+  margin-top: 40px;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  padding: 6px 8px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 20px;
+  color: var(--secondary-color);
+  outline: none;
+}
+
+form input::placeholder {
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+form span {
+  font-weight: 600;
+  color: var(--secondary-color);
+  transition: text-decoration 0.5s;
+}
+
+form span:hover {
+  text-decoration: underline;
+}
+
+form p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+form .checkbox {
+  width: 7%;
+  height: 5%;
+  display: inline;
+}
+
+
+.btn1 {
+  width: 90%;
+  margin-top: 40px;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+
+#login,
+#register {
+  position: absolute;
+  transition: left 0.7s ease-in-out;
+}
+
+#login {
+  top: 25%;
+  left: 7%;
+}
+
+#register {
+  top: 20%;
+  left: 105%;
+}
+
+.right-side {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 15px;
+  flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.7s ease-in-out;
+}
+
+.right-side form {
+  position: absolute;
+  width: 80%;
+  transition: left 0.7s ease-in-out;
+  padding: 10px 20px;
+  margin-top: 40px;
+}
+
+#login {
+  left: 5%;
+}
+
+#register {
+  left: 105%;
+}
+
+
+.login-active #login {
+  left: 5%;
+}
+
+.login-active #register {
+  left: 105%;
+}
+
+
+.register-active #login {
+  left: -200%;
+}
+
+.register-active #register {
+  left: 5%;
+}
+
+.button-box {
+  position: relative;
+  padding: 10px 25px;
+  box-shadow: 1px 2px 10px rgba(0,0,0, 0.8);
+  display: flex;
+  gap: 30%;
+  justify-content: space-around;
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  z-index: 100;
+  background: white;
+}
