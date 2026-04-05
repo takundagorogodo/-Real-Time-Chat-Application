@@ -6,6 +6,16 @@ This project demonstrates strong expertise in **full-stack development**, **real
 
 ---
 
+## 🎯 Problem Statement & Motivation
+
+At our college, important academic communications—such as exam schedules, assignment deadlines, and official announcements—are often shared through WhatsApp. However, due to the informal and cluttered nature of the platform, many students tend to miss critical updates among non-academic messages.
+
+To address this challenge, we designed and developed a dedicated real-time chat application exclusively for college members. This platform requires users to authenticate using their official college email IDs, ensuring that only students and staff can access it.
+
+The application is intended strictly for academic communication, enabling structured and reliable interaction between students and faculty. By centralizing communication in a purpose-built system, we aim to improve information visibility, reduce missed updates, and create a more focused academic environment.
+
+---
+
 ## 🚀 Overview
 
 This application enables real-time one-to-one messaging with advanced features such as delivery tracking, read receipts, typing indicators, and live user presence.
