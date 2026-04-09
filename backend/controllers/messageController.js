@@ -14,7 +14,7 @@ export const getMessages = async (req, res) => {
       .populate("senderId", "username")
       .lean();
 
-    // Format messages for frontend - ensure senderId is a string
+  
     const formattedMessages = messages.map(msg => ({
       _id: msg._id.toString(),
       roomId: msg.roomId.toString(),
