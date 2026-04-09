@@ -28,7 +28,6 @@ const sessionSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Index for cleanup queries
 sessionSchema.index({ userId: 1 });
 sessionSchema.index({ expiresAt: 1 });
 

@@ -25,9 +25,6 @@ const messageSchema = new mongoose.Schema(
       default: "text"
     },
 
-    // ==========================
-    // Edit / Delete Tracking
-    // ==========================
     isEdited: {
       type: Boolean,
       default: false
@@ -54,9 +51,7 @@ const messageSchema = new mongoose.Schema(
       default: null
     },
 
-    // ==========================
-    // Delivery & Seen
-    // ==========================
+ 
     deliveredTo: [
       {
         type: mongoose.Schema.Types.ObjectId,
@@ -71,9 +66,7 @@ const messageSchema = new mongoose.Schema(
       }
     ],
 
-    // ==========================
-    // Reactions
-    // ==========================
+ 
     reactions: [
       {
         userId: {
@@ -89,9 +82,6 @@ const messageSchema = new mongoose.Schema(
   }
 );
 
-// ==========================
-// Pagination Index
-// ==========================
 messageSchema.index({ roomId: 1, createdAt: -1 });
 
 export default mongoose.model("Message", messageSchema);

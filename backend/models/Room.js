@@ -37,8 +37,5 @@ const roomSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Index for fast lookup of user rooms
-//roomSchema.index({ members: 1 });
-//roomSchema.index({ privateKey: 1 });
 
 export default mongoose.model("Room", roomSchema);
