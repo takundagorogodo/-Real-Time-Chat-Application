@@ -1,3 +1,4 @@
+import React from "react";
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import axios from "../api/axios"; // ✅ custom instance with token — NOT plain axios
 import { useSocket } from "./SocketContext";
